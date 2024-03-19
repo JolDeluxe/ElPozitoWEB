@@ -5,10 +5,10 @@ header {
 
 /* Estilos para el rectángulo naranja */
 .orange-rectangle {
-    background-color: #FBF0E6;
+    background-color: #F5FAFF;
     padding: 0px;
     text-align: center;
-    color: #DB7206;
+    color: #2D6895;
     font-weight: bold;
     width: 70%;
     text-align: center;
@@ -155,3 +155,8 @@ header {
     background-color: #ccc; /* Color de fondo del rectángulo */
     border-radius: 30px; /* Ajusta este valor según sea necesario para obtener una forma ovalada */
 }
+
+.edit-btn:hover, .delete-btn:hover {
+    background-color: #007bff; /* Color azul al pasar el ratón */
+}
+
