@@ -12,7 +12,7 @@ public class ConexionMySQL {
      try {
          String u="root";
          String c="root";
-         String r="jdbc:mysql://localhost:3306/sicefa";
+         String r="jdbc:mysql://localhost:3306/";
          
          Class.forName("com.mysql.cj.jdbc.Driver");
          conn=DriverManager.getConnection(r, u, c);

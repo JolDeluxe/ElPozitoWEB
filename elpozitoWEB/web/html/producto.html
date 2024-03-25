@@ -10,7 +10,7 @@
         <title>Producto</title>
 
         <!-- CSS -->
-        <link href="../style/modulos css/producto.css" rel="stylesheet" type="text/css"/>
+        <link href="../style/modulos-css/producto.css" rel="stylesheet" type="text/css"/>
         <!-- Boostrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- Fontawesome -->
@@ -33,9 +33,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
-                    <!-- Espacio para la foto -->
                     <div class="user-photo">
-                        <!-- Aquí puedes poner la foto del usuario si lo deseas -->
                         <img src="../style/img/logo_elpozito.png" class="img-fluid" alt="logo;" style="width: 30%; height: auto">
                     </div>
                 </div>
@@ -63,25 +61,41 @@
             <div class="container mt-3">
                 <div class="row">
                     <div class="col-md-6">
+                        
                         <!-- Botón "Agregar Nuevo" -->
-                        <button onclick="mostrarFormulario('formulario1')" class="btn btn-primary" style="background-color: #DB7206; color:white; border-color: white;">
+                        
+                        <button onclick="mostrarFormulario('formulario1')" class="btn btn-primary" style="background-color: #2E8B57; color:white; border-color: white;">
                             Agregar Nuevo
                         </button>
+                        
                         <!-- Primer formulario -->
+                        
                         <div id="formulario1" style="display: none; background-color: #f8f8f8; padding: 20px; border-radius: 5px; margin-top: 10px;">
-                            <h3 class="orange-rectangle" style="background-color: #DDEEF4; color:#256F86; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
+                            <h3 class="orange-rectangle">
                                 Agregar Producto
                             </h3>
                             <form>
                                 <!-- Campos del formulario -->
+                                
+                                <!-- ID -->
+
+                                <div style="margin: 20px; padding: 10px; background-color: #FBF0E6; border-radius: 5px;">
+                                    <div class="mb-3">
+                                        <label for="txtIdProducto" class="form-label" style="color: black;">ID Producto:</label>
+                                        <input type="text" class="form-control" id="txtIdProducto" name="idProducto" readonly>
+                                    </div>
+                                </div>
+                                
+                                <!-- Restro de campos -->
+
                                 <div class="mb-3">
-                                    <label for="txtNombre" class="form-label">Nombre:</label>
-                                    <input type="text" class="form-control" id="txtNombre" name="nombre">
+                                    <label for="txtNombre1" class="form-label">Nombre:</label>
+                                    <input type="text" class="form-control" id="txtNombre1" name="nombre">
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="cmbUnidad" class="form-label">Unidad de medida:</label>
-                                    <select class="form-select" id="cmbUnidad" name="unidad">
+                                    <label for="cmbUnidad1" class="form-label">Unidad de medida:</label>
+                                    <select class="form-select" id="cmbUnidad1" name="unidad">
                                         <option value="" selected disabled>Selecciona una opción</option>
                                         <option value="ml">Mililitros (ml)</option>
                                         <option value="l">Litros (l)</option>
@@ -91,13 +105,13 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="txtPresentacion" class="form-label">Presentación:</label>
-                                    <input type="text" class="form-control" id="txtPresentacion" name="presentacion">
+                                    <label for="txtPresentacion1" class="form-label">Presentación:</label>
+                                    <input type="text" class="form-control" id="txtPresentacion1" name="presentacion">
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="cmbCategoria" class="form-label">Categoría:</label>
-                                    <select class="form-select" id="cmbCategoria" name="categoria">
+                                    <label for="cmbCategoria1" class="form-label">Categoría:</label>
+                                    <select class="form-select" id="cmbCategoria1" name="categoria">
                                         <option value="" selected disabled>Selecciona una opción</option>
                                         <option value="Frutas y verduras">Frutas y verduras</option>
                                         <option value="Productos lácteos">Productos lácteos</option>
@@ -114,23 +128,23 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="txtPrecioCompra" class="form-label">Precio de Compra: $</label>
-                                    <input type="number" class="form-control" id="txtPrecioCompra" name="precioCompra">
+                                    <label for="txtPrecioCompra1" class="form-label">Precio de Compra: $</label>
+                                    <input type="number" class="form-control" id="txtPrecioCompra1" name="precioCompra">
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="txtPrecioVenta" class="form-label">Precio de Venta: $</label>
-                                    <input type="number" class="form-control" id="txtPrecioVenta" name="precioVenta">
+                                    <label for="txtPrecioVenta1" class="form-label">Precio de Venta: $</label>
+                                    <input type="number" class="form-control" id="txtPrecioVenta1" name="precioVenta">
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="txtCodigoProducto" class="form-label">Código de Producto:</label>
-                                    <input type="text" class="form-control" id="txtCodigoProducto" name="codigoProducto">
+                                    <label for="txtCodigoProducto1" class="form-label">Código de Producto:</label>
+                                    <input type="text" class="form-control" id="txtCodigoProducto1" name="codigoProducto">
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="txtCodigoBarras" class="form-label">Código de Barras:</label>
-                                    <input type="text" class="form-control" id="txtCodigoBarras" name="codigoBarras">
+                                    <label for="txtCodigoBarras1" class="form-label">Código de Barras:</label>
+                                    <input type="text" class="form-control" id="txtCodigoBarras1" name="codigoBarras">
                                 </div>
                                 <div class="mb-3">
                                     <button type="button" class="btn btn-primary">Guardar</button>
@@ -144,20 +158,27 @@
                     <div class="col-md-6">
                         <!-- Segundo formulario -->
                         <div id="formulario2" style="display: none; background-color: #f8f8f8; padding: 20px; border-radius: 5px; margin-top: 10px;">
-                            <h3 class="orange-rectangle" style="background-color: #DDEEF4; color:#256F86; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
+                            <h3 class="orange-rectangle">
                                 Editar Producto
                             </h3>
                             <form>
                                 <!-- Campos del formulario -->
-                                <!-- Campos del formulario -->
-                                <div class="mb-3">
-                                    <label for="txtNombre" class="form-label">Nombre:</label>
-                                    <input type="text" class="form-control" id="txtNombre" name="nombre">
+
+                                <div style="margin: 20px; padding: 10px; background-color: #FBF0E6; border-radius: 5px;">
+                                    <div class="mb-3">
+                                        <label for="txtIdProducto2" class="form-label" style="color: black;">ID Producto:</label>
+                                        <input type="text" class="form-control" id="txtIdProducto2" name="idProducto" readonly>
+                                    </div>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="cmbUnidad" class="form-label">Unidad de medida:</label>
-                                    <select class="form-select" id="cmbUnidad" name="unidad">
+                                    <label for="txtNombre2" class="form-label">Nombre:</label>
+                                    <input type="text" class="form-control" id="txtNombre2" name="nombre">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="cmbUnidad2" class="form-label">Unidad de medida:</label>
+                                    <select class="form-select" id="cmbUnidad2" name="unidad">
                                         <option value="" selected disabled>Selecciona una opción</option>
                                         <option value="ml">Mililitros (ml)</option>
                                         <option value="l">Litros (l)</option>
@@ -167,13 +188,13 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="txtPresentacion" class="form-label">Presentación:</label>
-                                    <input type="text" class="form-control" id="txtPresentacion" name="presentacion">
+                                    <label for="txtPresentacion2" class="form-label">Presentación:</label>
+                                    <input type="text" class="form-control" id="txtPresentacion2" name="presentacion">
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="cmbCategoria" class="form-label">Categoría:</label>
-                                    <select class="form-select" id="cmbCategoria" name="categoria">
+                                    <label for="cmbCategoria2" class="form-label">Categoría:</label>
+                                    <select class="form-select" id="cmbCategoria2" name="categoria">
                                         <option value="" selected disabled>Selecciona una opción</option>
                                         <option value="Frutas y verduras">Frutas y verduras</option>
                                         <option value="Productos lácteos">Productos lácteos</option>
@@ -190,23 +211,23 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="txtPrecioCompra" class="form-label">Precio de Compra: $</label>
-                                    <input type="number" class="form-control" id="txtPrecioCompra" name="precioCompra">
+                                    <label for="txtPrecioCompra2" class="form-label">Precio de Compra: $</label>
+                                    <input type="number" class="form-control" id="txtPrecioCompra2" name="precioCompra">
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="txtPrecioVenta" class="form-label">Precio de Venta: $</label>
-                                    <input type="number" class="form-control" id="txtPrecioVenta" name="precioVenta">
+                                    <label for="txtPrecioVenta2" class="form-label">Precio de Venta: $</label>
+                                    <input type="number" class="form-control" id="txtPrecioVenta2" name="precioVenta">
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="txtCodigoProducto" class="form-label">Código de Producto:</label>
-                                    <input type="text" class="form-control" id="txtCodigoProducto" name="codigoProducto">
+                                    <label for="txtCodigoProducto2" class="form-label">Código de Producto:</label>
+                                    <input type="text" class="form-control" id="txtCodigoProducto2" name="codigoProducto">
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="txtCodigoBarras" class="form-label">Código de Barras:</label>
-                                    <input type="text" class="form-control" id="txtCodigoBarras" name="codigoBarras">
+                                    <label for="txtCodigoBarras2" class="form-label">Código de Barras:</label>
+                                    <input type="text" class="form-control" id="txtCodigoBarras2" name="codigoBarras">
                                 </div>
                                 <!-- Botones -->
                                 <div class="mb-3">
@@ -221,7 +242,7 @@
             </div>
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="Buscar producto">
+            <input type="text" placeholder="Buscar Producto">
             <svg xmlns="http://www.w3.org/2000/svg" height="22" width="15" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#6b6b6b" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
         </div>
         <br><br>
@@ -232,7 +253,7 @@
                         <th>ID</th>
                         <th>Foto</th>
                         <th>Nombre Genérico</th>
-                        <th>Precio Unitario</th>
+                        <th>Precio Venta</th>
                         <th>Operación</th>
                     </tr>
                 </thead>
